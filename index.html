@@ -18,25 +18,42 @@
 <body>
     <!-- Image and text -->
     <nav class="navbar navbar-light bg-dark">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand text-white" href="#">
             <img src="C:\Users\mrcas\Pictures\Profile Pics\Selfie.jpg" width="30" height="30"
                 class="d-inline-block align-top text-white" alt="" loading="lazy">
-            About Me
+            For the Hommie's
         </a>
-        <ul class="nav nav-pills stickytop">
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="">Memes</a>
-            </li>
-          </ul>
+        <div class="card-header bg-dark">
+            <ul class="nav nav-tabs stickytop cardheader-tabs">
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="aboutme.html" role="tab"
+                            aria-controls="home" aria-selected="true">Home</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="portfolio.html" role="tab"
+                            aria-controls="profile" aria-selected="false">Profile</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="messages-tab" data-toggle="tab" href="contact.html" role="tab"
+                            aria-controls="messages" aria-selected="false">Messages</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="settings-tab" data-toggle="tab" href="Memes.html" role="tab"
+                            aria-controls="settings" aria-selected="false">Settings</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane" id="aboutme" role="tabpanel" aria-labelledby="home-tab">...</div>
+                    <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                    <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">...</div>
+                    <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">...</div>
+                </div>
+            </ul>
         </div>
     </nav>
 </body>
